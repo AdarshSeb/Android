@@ -15,8 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void onnext(View v){
-        Intent obj;
-        obj = new Intent("act.secv");
+        Intent obj = new Intent("act.secv");
         EditText e = (EditText)findViewById(R.id.etnext) ;
         obj.putExtra("name",e.getText().toString());
         startActivity(obj);
